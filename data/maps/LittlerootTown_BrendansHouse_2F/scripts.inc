@@ -279,6 +279,8 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckRivalsPC::
 	end
 
 PlayersHouse_2F_EventScript_Notebook::
+	giveegg	SPECIES_MEW
+	giveegg	SPECIES_MEWTWO
 	msgbox PlayersHouse_2F_Text_Notebook, MSGBOX_SIGN
 	end
 
@@ -301,12 +303,7 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "everything's all there on your desk.$"
 
 PlayersHouse_2F_Text_Notebook:
-	.string "{PLAYER} flipped open the notebook.\p"
-	.string "ADVENTURE RULE NO. 1\n"
-	.string "Open the MENU with START.\p"
-	.string "ADVENTURE RULE NO. 2\n"
-	.string "Record your progress with SAVE.\p"
-	.string "The remaining pages are blank…$"
+	.string "Ooooh, some eggs$"
 
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"
