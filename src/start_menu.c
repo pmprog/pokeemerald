@@ -985,14 +985,14 @@ static u8 SaveConfirmInputCallback(void)
         case SAVE_STATUS_CORRUPT:
             if (gDifferentSaveFile == FALSE)
             {
-                sSaveDialogCallback = SaveFileExistsCallback;
+                sSaveDialogCallback = SaveSavingMessageCallback; //SaveFileExistsCallback;
                 return SAVE_IN_PROGRESS;
             }
 
             sSaveDialogCallback = SaveSavingMessageCallback;
             return SAVE_IN_PROGRESS;
         default:
-            sSaveDialogCallback = SaveFileExistsCallback;
+            sSaveDialogCallback = SaveSavingMessageCallback; //SaveFileExistsCallback;
             return SAVE_IN_PROGRESS;
         }
     case -1: // B Button
